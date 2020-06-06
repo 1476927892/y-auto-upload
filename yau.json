@@ -1,0 +1,13 @@
+{
+  "server": {
+    "host": "",
+    "port": "",
+    "username": "",
+    "password": ""
+  },
+  "address": {
+    "path": "/usr/local/nginx/html",
+    "projectName": "",
+    "backupName": "backups"
+  }
+}

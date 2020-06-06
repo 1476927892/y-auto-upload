@@ -18,26 +18,27 @@ let config = {
   username: "",
   password: "",
 };
+const conn = new Client();
 fs.readFile(pathFile, "utf-8", function (err, data) {
   if (err) {
-    console.log(err, "读取服务器配置文件失败");
+    console.log(err);
   } else {
     try {
       console.log("读取配置文件");
       let json = JSON.parse(data);
+      console.log(json);
       config = json.server;
       address = json.address;
       ssh2control();
     } catch (error) {
-      console.log(err, "读取服务器配置文件失败");
+      console.log(error);
     }
   }
 });
+
 const ssh2control = function () {
-  console.log("执行自动脚本");
   conn
     .on("ready", function () {
-      console.log("读取项目目录完成");
       conn.sftp(function (err, sftp) {
         if (err) {
           console.log("读取项目目录失败");
@@ -48,6 +49,8 @@ const ssh2control = function () {
           if (err) {
             console.log("读取项目目录失败");
             conn.end();
+          } else {
+            console.log("读取项目目录完成");
           }
           let bfIndex = list.findIndex((d) => {
             return d.filename == "backups";
