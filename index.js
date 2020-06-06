@@ -26,7 +26,6 @@ fs.readFile(pathFile, "utf-8", function (err, data) {
     try {
       console.log("读取配置文件");
       let json = JSON.parse(data);
-      console.log(json);
       config = json.server;
       address = json.address;
       ssh2control();
