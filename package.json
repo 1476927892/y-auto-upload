@@ -1,6 +1,6 @@
 {
   "name": "y-auto-upload",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,5 +13,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "scp2": "^0.5.0",
+    "ssh2": "^0.8.9"
+  }
 }
