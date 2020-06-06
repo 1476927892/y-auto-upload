@@ -122,11 +122,10 @@ const backup = {
     conn.exec(`zip -q -r ${newFileName} ${address.path}/${address.projectName}`, function (err, stream) {
       if (err) {
         console.log("备份失败");
-      } else {
-        console.log("备份完成");
       }
       stream
         .on("close", function () {
+          console.log("备份完成");
           upload();
         })
         .on("data", function (data) {
