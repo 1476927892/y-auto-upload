@@ -86,7 +86,7 @@ const backup = {
       });
       let delFile = "";
       //倒叙
-      arr = list.sort((a, b) => {
+      arr = arr.sort((a, b) => {
         return b.attrs.atime - a.attrs.atime;
       });
       for (let i = 0; i < arr.length; i++) {
