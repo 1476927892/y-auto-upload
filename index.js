@@ -85,18 +85,14 @@ const backup = {
         return d.filename.indexOf(address.projectName) != -1;
       });
       let delFile = "";
-      if (arr.length >= 3) {
-        arr = list.sort((a, b) => {
-          return b.attrs.atime - a.attrs.atime;
-        });
-
-        for (let i = arr.length - 1; i >= 0; i--) {
-          let file = arr[i];
-          if (i - 1 == 0) {
-            break;
-          } else {
-            delFile += ` ${address.path}/${address.backupName}/${file.filename}`;
-          }
+      //倒叙
+      arr = list.sort((a, b) => {
+        return b.attrs.atime - a.attrs.atime;
+      });
+      for (let i = 0; i < arr.length; i++) {
+        let file = arr[i];
+        if (i >= 2) {
+          delFile += ` ${address.path}/${address.backupName}/${file.filename}`;
         }
       }
       if (delFile) {
