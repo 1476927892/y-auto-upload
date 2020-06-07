@@ -1,5 +1,9 @@
 # y-auto-upload
 
+```
+项目打包之后自动上传到服务器目录，并备份（默认备份3次，之后将逐步删除以前的）
+```
+
 ## 安装
 
 ```
@@ -10,6 +14,7 @@ npm install y-auto-upload -D
 
 ```
 在项目根目录创建 yau.json
+由于配置了服务器信息，建议git提交忽略此文件
 {
   "server": {
     "host": "",
@@ -24,4 +29,14 @@ npm install y-auto-upload -D
   }
 }
 
+```
+
+## 使用
+
+```
+package.json
+
+  "scripts": {
+    "build:yau": "npm run build && yau",
+  }
 ```
