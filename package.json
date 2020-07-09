@@ -9,6 +9,7 @@
   "bin": {
     "yau": "index.js"
   },
+  "homepage": "https://github.com/1476927892/y-auto-upload",
   "keywords": [],
   "author": "",
   "license": "ISC",
