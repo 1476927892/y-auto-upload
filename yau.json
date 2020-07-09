@@ -6,6 +6,7 @@
     "password": ""
   },
   "address": {
+    "backupCount": 3,
     "path": "/usr/local/nginx/html",
     "projectName": "",
     "backupName": "backups"
