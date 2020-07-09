@@ -1,7 +1,7 @@
 # y-auto-upload
 
 ```
-项目打包之后自动上传到服务器目录，并备份（默认备份3次，之后将逐步删除以前的）
+项目打包之后自动上传到服务器目录，并备份
 ```
 
 ## 安装
@@ -23,6 +23,7 @@ npm install y-auto-upload -D
     "password": ""
   },
   "address": {
+    "backupCount":3 //最大备份包数
     "path": "", //服务器目录  /usr/local/nginx/html
     "projectName": "",  //服务器存放项目的文件夹
     "backupName": ""  //备份文件夹
