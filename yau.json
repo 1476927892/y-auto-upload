@@ -10,7 +10,6 @@
     "path": "/usr/local/nginx/html",
     "projectName": "",
     "backupName": "backups",
-    "buildDir": "dist",
-    "projectType": "static"
+    "buildDir": "dist"
   }
 }
