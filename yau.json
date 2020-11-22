@@ -5,10 +5,12 @@
     "username": "",
     "password": ""
   },
-  "address": {
+  "YConfig": {
     "backupCount": 3,
     "path": "/usr/local/nginx/html",
     "projectName": "",
-    "backupName": "backups"
+    "backupName": "backups",
+    "buildDir": "dist",
+    "projectType": "static"
   }
 }

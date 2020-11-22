@@ -26,7 +26,8 @@ npm install y-auto-upload -D
     "backupCount":3, //最大备份包数
     "path": "", //服务器目录  /usr/local/nginx/html
     "projectName": "",  //服务器存放项目的文件夹
-    "backupName": ""  //备份文件夹
+    "backupName": "",  //备份文件夹
+    "buildDir": "dist", //需要上传的文件夹，多个方式["dist","package.json"]
   }
 }
 
@@ -38,6 +39,6 @@ npm install y-auto-upload -D
 package.json
 
   "scripts": {
-    "build:yau": "npm run build && yau",
+    "yau": "yau",
   }
 ```
