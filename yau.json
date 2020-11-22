@@ -10,6 +10,11 @@
     "path": "/usr/local/nginx/html",
     "projectName": "",
     "backupName": "backups",
-    "buildDir": "dist"
+    "buildDir": [
+      {
+        "local": "dist",
+        "online": "projectName"
+      }
+    ]
   }
 }

@@ -22,12 +22,12 @@ npm install y-auto-upload -D
     "username": "",
     "password": ""
   },
-  "address": {
+  "YConfig": {
     "backupCount":3, //最大备份包数
     "path": "", //服务器目录  /usr/local/nginx/html
     "projectName": "",  //服务器存放项目的文件夹
     "backupName": "",  //备份文件夹
-    "buildDir": "dist", //需要上传的文件夹，多个方式["dist","package.json"]
+    "buildDir": [{local:"dist",online:"projectName"}], //需要上传的文件夹,或文件夹 local：本地目录，online：线上目录（不传默认为projectName）
   }
 }
 
