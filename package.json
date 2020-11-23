@@ -1,10 +1,10 @@
 {
   "name": "y-auto-upload",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "test": "node ./lib/index.js"
+    "start": "cross-env NODE_ENV=projectName node ./lib/index.js"
   },
   "bin": {
     "yau": "lib/index.js"
@@ -15,7 +15,8 @@
   "license": "ISC",
   "dependencies": {
     "scp2": "^0.5.0",
-    "ssh2": "^0.8.9"
+    "ssh2": "^0.8.9",
+    "cross-env": "^7.0.2"
   },
   "devDependencies": {}
 }

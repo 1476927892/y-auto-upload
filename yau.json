@@ -5,20 +5,22 @@
     "username": "",
     "password": ""
   },
-  "YConfig": {
-    "backupCount": 3,
-    "path": "/usr/local/nginx/html",
-    "projectName": "",
-    "backupName": "backups",
-    "buildDir": [
-      {
-        "local": "dist",
-        "online": "projectName"
-      }
-    ]
-  },
-  "exec": {
-    "upload_before": [],
-    "done": []
+  "projectName": {
+    "YConfig": {
+      "backupCount": 3,
+      "path": "/usr/local/nginx/html",
+      "projectName": "",
+      "backupName": "backups",
+      "buildDir": [
+        {
+          "local": "dist",
+          "online": "projectName"
+        }
+      ]
+    },
+    "exec": {
+      "upload_before": [],
+      "done": []
+    }
   }
 }
