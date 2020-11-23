@@ -28,6 +28,11 @@ npm install y-auto-upload -D
     "projectName": "",  //服务器存放项目的文件夹
     "backupName": "",  //备份文件夹
     "buildDir": [{local:"dist",online:"projectName"}], //需要上传的文件夹,或文件夹 local：本地目录，online：线上目录（不传默认为projectName）
+  },
+  //自定义命令
+  "exec": {
+    "upload_before": ["cd /root"], //上传文件之前执行
+    "done": [] ,//最后执行
   }
 }
 
